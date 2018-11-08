@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <h1>Enter a URL to shorten:</h1>
+        <form method="POST" action="/">
+            <input type="text" name="url" placeholder="Enter a URL">
+            <input type="submit">
+        </form>
+        {% if short_url %}
+           <b>URL shortened:</b> <a href="  ">{{ short_url }}</a>
+        {% endif %}
+    </body>
+</html>
